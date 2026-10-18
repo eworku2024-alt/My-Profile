@@ -63,7 +63,7 @@ html {
 body {
   font-family: "Lato", serif, Calibri, Arial;
   color: #656c6d;
-  background: #efe9e9;
+  background: #f7f8fa;
   font-size: 0.9em;
   font-weight: 400;
 }
@@ -170,7 +170,7 @@ body {
 }
 
 .main-picture {
-  background-image: url("/moscow-personal-portfolio/images/IMG_2445.JPG");
+  background-image: url("../images/projects/profile.jpeg");
   padding: 0;
   margin-top: 24px;
   margin-left: 24px;
@@ -778,7 +778,14 @@ section.bl-expand .bl-icon-close {
 }
 
 .profile-picture {
-  display: none;
+  display: block;
+}
+
+.profile-picture .my-picture {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .personal-info h6 {

@@ -103,6 +103,11 @@ var Boxlayout = (function() {
         // clicking on a work item: the current section scales down and the respective work panel slides up
         $workItems.on('click', function(event) {
 
+            var link = $(event.target).closest('a');
+            if (link.length && link.attr('href') !== '#') {
+                return true;
+            }
+
             // scale down main section
             $sectionWork.addClass('bl-scale-down');
 
